@@ -10,7 +10,6 @@ h1 {
 }
 
 body {
-  margin: 5% 20%;
   background-image: radial-gradient(#979797 1px, transparent 1px);
   background-size: 75px 75px;
   background-color: #f0f0f0;
@@ -25,4 +24,5 @@ p {
   padding: 10px;
   box-align: center;
   border-radius: 5px;
+  margin: 5% 20%;
 }
