@@ -5,11 +5,12 @@
 
 
 h1 {
-  font-size: 1.5em; Verdana; color:brown;
+  font-size: 1.5em; ; color:brown;
   text-shadow: .2em .2em silver;
-  }
+}
 
-
+body {
 background-image: radial-gradient(#979797 1.5px, transparent 1.5px);
 background-size: 43px 43px;
 background-color: #f0f0f0;
+}
