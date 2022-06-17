@@ -22,4 +22,5 @@ main {
   background-color: #9ea1ff;
   width: 500px;
   padding: 10px;
+  align-self: center;
 }
