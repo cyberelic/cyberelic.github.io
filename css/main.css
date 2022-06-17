@@ -10,7 +10,7 @@ h1 {
 }
 
 body {
-background-image: radial-gradient(#979797 1.5px, transparent 1.5px);
-background-size: 43px 43px;
-background-color: #f0f0f0;
+  background-image: radial-gradient(#979797 1.5px, transparent 1.5px);
+  background-size: 43px 43px;
+  background-color: #f0f0f0;
 }
