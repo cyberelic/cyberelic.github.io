@@ -16,7 +16,7 @@ body {
   background-color: #f0f0f0;
 }
 
-main {
+p {
   -webkit-box-shadow: 0 0 8.5px 6px #838383;
   -moz-box-shadow: 0 0 8.5px 6px #838383;
   box-shadow: 0 0 8.5px 6px #838383;
