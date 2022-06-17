@@ -23,4 +23,5 @@ main {
   width: 500px;
   padding: 10px;
   align-self: center;
+  border-radius: 5px;
 }
