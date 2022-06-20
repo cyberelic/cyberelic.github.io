@@ -30,6 +30,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   background-color: #00af8f;
+  border: 1px solid;
   list-style: none; /* removes bullets */
   padding: .5em;
   margin: 0;
