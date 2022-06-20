@@ -24,7 +24,7 @@ p {
   border-radius: 5px;
 }
 
-ul {
+#nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
