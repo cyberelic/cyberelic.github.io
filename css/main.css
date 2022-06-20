@@ -26,6 +26,7 @@ p {
 
 #nav {
   display: flex;
+  list-style-type: none;
   justify-content: space-between;
   align-items: center;
   background-color: whitesmoke;
