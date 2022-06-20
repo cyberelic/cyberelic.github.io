@@ -13,14 +13,12 @@ h1 {
 body {
   margin: 5% 20%;
   background: white;
-  background: -webkit-linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
-  background: linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
 }
 
 p {
   border-style: solid; size: 0.5px;
   /*box-shadow: 0 0 8.5px 6px #838383;*/
-  background-color: #9ea1ff;
+  background-color: whitesmoke;
   width: 500px;
   padding: 10px;
   box-align: center;
