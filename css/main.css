@@ -27,6 +27,7 @@ p {
 
 ul {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background-color: #00af8f;
   list-style: none; /* removes bullets */
