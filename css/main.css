@@ -25,7 +25,7 @@ p {
 }
 
 #nav {
-  display: flex;
+  display: grid;
   list-style-type: none;
   justify-content: center;
   align-items: center;
