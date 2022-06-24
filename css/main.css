@@ -25,6 +25,7 @@ p {
 }
 
 #nav {
+  font-family: 'Courier New', Courier, monospace;
   display: grid;
   list-style-type: none;
   justify-content: center;
