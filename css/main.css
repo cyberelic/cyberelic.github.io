@@ -5,9 +5,7 @@
 
 
 h1 {
-  font-size: 1.5em; ; color:brown;
-  text-shadow: .2em .2em silver;
-  border: 2px red solid;
+  font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 body {
@@ -16,6 +14,7 @@ body {
 }
 
 p {
+  font-family: 'Merriweather Sans', sans-serif;
   border: 1px solid;
   /*box-shadow: 0 0 8.5px 6px #838383;*/
   background-color: whitesmoke;
