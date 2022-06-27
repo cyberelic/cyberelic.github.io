@@ -6,6 +6,8 @@
 
 h1 {
   font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 27;
+  font-weight: 700;
 }
 
 body {
@@ -15,6 +17,8 @@ body {
 
 p {
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16;
+  font-weight: 400;
   border: 1px solid;
   /*box-shadow: 0 0 8.5px 6px #838383;*/
   background-color: whitesmoke;
