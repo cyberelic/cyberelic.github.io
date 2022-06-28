@@ -12,7 +12,7 @@ h1 {
 
 body {
   margin: 5% 30%;
-  background: white;
+  background: #bdbdbd;
 }
 
 p {
@@ -34,7 +34,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  border: 1px solid;
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
   padding: 3px;
   margin: 2%;
 }
