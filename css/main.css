@@ -20,7 +20,7 @@ p {
   font-size: 16;
   font-weight: 400;
   border: 1px solid;
-  /*box-shadow: 0 0 8.5px 6px #838383;*/
+  box-shadow: inset 1px 1px #fff, 1px 1px #000;
   background-color: whitesmoke;
   padding: 10px;
   box-align: center;
