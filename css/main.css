@@ -15,7 +15,7 @@ body {
   background: #bdbdbd;
 }
 
-p {
+#content {
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 16;
   font-weight: 400;
