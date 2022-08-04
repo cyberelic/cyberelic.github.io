@@ -1,14 +1,15 @@
 ## Welcome to cyberelic
 
-You can use the [editor on GitHub](https://github.com/cyberelic/cyberelic.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+this site focuses on my cyber security journey. its a place for me to write down walktrhoughs of the CTF's I complete.
+
 
 ### Markdown
 
 
 Markdown
-``` is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
+markdown
 Syntax highlighted code block
 
 # Header 1
@@ -24,7 +25,7 @@ Syntax highlighted code block
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
+
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
