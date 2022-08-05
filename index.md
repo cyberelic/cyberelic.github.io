@@ -3,20 +3,6 @@
 this site focuses on my cyber security journey. its a place for me to write down walkthroughs of the [CTF's](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-
 # Tryhackme - Anthem
 
 this is a box labled "easy" from tryhackme. The first thing i like to do with any new CTF is a Nmap scan.
@@ -121,6 +107,7 @@ Nmap done: 1 IP address (1 host up) scanned in 365.08 seconds
            Raw packets sent: 131352 (5.785MB) | Rcvd: 36451 (6.554MB)
 ```
            
-           
-second thing i ran was a nikto scan:
+the Nmap scan reported that a web-site was avainble on port **80** and a RDP was availible on port **3389**           
+i then decided to run was a nikto scan on port **80**:
+
 which gave the following results:
