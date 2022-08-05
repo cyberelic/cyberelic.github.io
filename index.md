@@ -3,15 +3,6 @@
 this site focuses on my cyber security journey. its a place for me to write down walkthroughs of the [CTF's](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
 
 
-### Markdown
-
-
-Markdown
-is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-markdown
-Syntax highlighted code block
-
 # Header 1
 ## Header 2
 ### Header 3
@@ -26,8 +17,9 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 
+# Tryhackme - Anthem
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+this is an easy box from tryhackme.
 
 ```
 sudo nmap -v -sS -A -T4 -p- 10.10.186.97 -Pn
