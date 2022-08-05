@@ -1,6 +1,6 @@
 ## Welcome to cyberelic
 
-this site focuses on my cyber security journey. its a place for me to write down walktrhoughs of the [CTF's](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
+this site focuses on my cyber security journey. its a place for me to write down walkthroughs of the [CTF's](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
 
 
 ### Markdown
@@ -35,8 +35,8 @@ sudo nmap -v -sS -A -T4 -p- 10.10.186.97 -Pn
 
 Which returned the following results:
 
-
-`Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
+```
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-07-11 14:01 CDT
 NSE: Loaded 155 scripts for scanning.
 NSE: Script Pre-scanning.
@@ -126,7 +126,8 @@ Completed NSE at 14:08, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 365.08 seconds
-           Raw packets sent: 131352 (5.785MB) | Rcvd: 36451 (6.554MB)`
+           Raw packets sent: 131352 (5.785MB) | Rcvd: 36451 (6.554MB)
+```
            
            
 second thing i ran was a nikto scan:
