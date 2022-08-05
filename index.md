@@ -1,6 +1,6 @@
 ## Welcome to cyberelic
 
-this site focuses on my cyber security journey. its a place for me to write down walktrhoughs of the CTF's(https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
+this site focuses on my cyber security journey. its a place for me to write down walktrhoughs of the [CTF's](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
 
 
 ### Markdown
