@@ -127,7 +127,7 @@ Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 365.08 seconds
            Raw packets sent: 131352 (5.785MB) | Rcvd: 36451 (6.554MB)
-           ```
+```
 
 second thing i ran was a nikto scan:
 which gave the following results:
