@@ -33,6 +33,8 @@ For more details see [Basic writing and formatting syntax](https://docs.github.c
 sudo nmap -v -sS -A -T4 -p- 10.10.186.97 -Pn
 ```
 
+Which returned the following results:
+
 ```Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-07-11 14:01 CDT
 NSE: Loaded 155 scripts for scanning.
