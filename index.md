@@ -111,3 +111,30 @@ the Nmap scan reported that a web-site was avainble on port **80** and a RDP was
 i then decided to run was a nikto scan on port **80**:
 
 which gave the following results:
+
+```
+$ nikto -h http://10.10.186.97 
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.186.97
++ Target Hostname:    10.10.186.97
++ Target Port:        80
++ Start Time:         2022-07-11 13:40:50 (GMT-5)
+---------------------------------------------------------------------------
++ Server: No banner retrieved
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Server banner has changed from '' to 'Microsoft-IIS/10.0' which may suggest a WAF, load balancer or proxy is in place
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Entry '/umbraco/' in robots.txt returned a non-forbidden or redirect HTTP code ()
++ Entry '/umbraco_client/' in robots.txt returned a non-forbidden or redirect HTTP code ()
++ "robots.txt" contains 4 entries which should be manually viewed.
++ ERROR: Error limit (20) reached for host, giving up. Last error: error reading HTTP response
++ Scan terminated:  20 error(s) and 6 item(s) reported on remote host
++ End Time:           2022-07-11 13:51:23 (GMT-5) (633 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
+
+whats interesting here is the robots.txt that was found with intriguing entrys.
