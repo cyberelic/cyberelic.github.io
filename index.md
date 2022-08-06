@@ -5,7 +5,9 @@ this site focuses on my cyber security journey. its a place for me to write down
 
 # Tryhackme - Anthem
 
-this is a box labled "easy" from tryhackme. The first thing i like to do with any new CTF is a Nmap scan.
+This is a box labled "easy" from [tryhackme.com](https://www.tryhackme.com)
+
+The first thing i like to do with any new CTF is a Nmap scan.
 
 ```
 sudo nmap -v -sS -A -T4 -p- 10.10.186.97 -Pn
