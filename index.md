@@ -3,110 +3,125 @@
 this site focuses on my cyber security journey. its a place for me to write down walkthroughs of the [CTF's](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
 
 
-# Tryhackme - Anthem
+# Tryhackme - BruteIt
 
 This is a box labled "easy" from [tryhackme.com](https://www.tryhackme.com)
 
 The first thing i like to do with any new CTF is a Nmap scan.
 
 ```
-sudo nmap -v -sS -A -T4 -p- 10.10.186.97 -Pn
+$ sudo nmap -v -sS -A -T4 -p- 10.10.162.54
 ```
 
 Which returned the following results:
 
 ```
-Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times may be slower.
-Starting Nmap 7.92 ( https://nmap.org ) at 2022-07-11 14:01 CDT
+[sudo] password for cbr: 
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-06 14:51 CDT
 NSE: Loaded 155 scripts for scanning.
 NSE: Script Pre-scanning.
-Initiating NSE at 14:01
-Completed NSE at 14:01, 0.00s elapsed
-Initiating NSE at 14:01
-Completed NSE at 14:01, 0.00s elapsed
-Initiating NSE at 14:01
-Completed NSE at 14:01, 0.00s elapsed
-Initiating Parallel DNS resolution of 1 host. at 14:01
-Completed Parallel DNS resolution of 1 host. at 14:01, 0.00s elapsed
-Initiating SYN Stealth Scan at 14:01
-Scanning 10.10.186.97 [65535 ports]
-Discovered open port 3389/tcp on 10.10.186.97
-Discovered open port 80/tcp on 10.10.186.97
-SYN Stealth Scan Timing: About 10.15% done; ETC: 14:07 (0:04:34 remaining)
-SYN Stealth Scan Timing: About 30.35% done; ETC: 14:05 (0:02:20 remaining)
-SYN Stealth Scan Timing: About 43.95% done; ETC: 14:05 (0:01:56 remaining)
-SYN Stealth Scan Timing: About 61.08% done; ETC: 14:06 (0:01:38 remaining)
-SYN Stealth Scan Timing: About 80.17% done; ETC: 14:05 (0:00:46 remaining)
-Completed SYN Stealth Scan at 14:06, 260.15s elapsed (65535 total ports)
-Initiating Service scan at 14:06
-Scanning 2 services on 10.10.186.97
-Completed Service scan at 14:06, 16.80s elapsed (2 services on 1 host)
-Initiating OS detection (try #1) against 10.10.186.97
-adjust_timeouts2: packet supposedly had rtt of -101207 microseconds.  Ignoring time.
-adjust_timeouts2: packet supposedly had rtt of -101207 microseconds.  Ignoring time.
-Retrying OS detection (try #2) against 10.10.186.97
-Initiating Traceroute at 14:06
-Completed Traceroute at 14:06, 3.02s elapsed
-Initiating Parallel DNS resolution of 2 hosts. at 14:06
-Completed Parallel DNS resolution of 2 hosts. at 14:06, 0.00s elapsed
-NSE: Script scanning 10.10.186.97.
-Initiating NSE at 14:06
-Completed NSE at 14:07, 69.50s elapsed
-Initiating NSE at 14:07
-Completed NSE at 14:08, 8.22s elapsed
-Initiating NSE at 14:08
-Completed NSE at 14:08, 0.00s elapsed
-Nmap scan report for 10.10.186.97
-Host is up (0.14s latency).
-Not shown: 65533 filtered tcp ports (no-response)
-PORT     STATE SERVICE       VERSION
-80/tcp   open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
-3389/tcp open  ms-wbt-server Microsoft Terminal Services
-| rdp-ntlm-info: 
-|   Target_Name: WIN-LU09299160F
-|   NetBIOS_Domain_Name: WIN-LU09299160F
-|   NetBIOS_Computer_Name: WIN-LU09299160F
-|   DNS_Domain_Name: WIN-LU09299160F
-|   DNS_Computer_Name: WIN-LU09299160F
-|   Product_Version: 10.0.17763
-|_  System_Time: 2022-07-11T19:06:46+00:00
-|_ssl-date: 2022-07-11T19:07:54+00:00; 0s from scanner time.
-| ssl-cert: Subject: commonName=WIN-LU09299160F
-| Issuer: commonName=WIN-LU09299160F
-| Public Key type: rsa
-| Public Key bits: 2048
-| Signature Algorithm: sha256WithRSAEncryption
-| Not valid before: 2022-07-10T18:37:00
-| Not valid after:  2023-01-09T18:37:00
-| MD5:   09c9 93d1 2dbb ccc1 5205 cde3 6b7d e101
-|_SHA-1: 4a6d 2210 354b 84ef e955 cc9d e951 5cd7 e397 b8d4
-Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-Device type: specialized
-Running (JUST GUESSING): AVtech embedded (85%)
-Aggressive OS guesses: AVtech Room Alert 26W environmental monitor (85%)
-No exact OS matches for host (test conditions non-ideal).
-Network Distance: 4 hops
-TCP Sequence Prediction: Difficulty=262 (Good luck!)
-IP ID Sequence Generation: Busy server or unknown class
-Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+Initiating NSE at 14:51
+Completed NSE at 14:51, 0.00s elapsed
+Initiating NSE at 14:51
+Completed NSE at 14:51, 0.00s elapsed
+Initiating NSE at 14:51
+Completed NSE at 14:51, 0.00s elapsed
+Initiating Ping Scan at 14:51
+Scanning 10.10.162.54 [4 ports]
+Completed Ping Scan at 14:51, 0.21s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:51
+Completed Parallel DNS resolution of 1 host. at 14:51, 0.00s elapsed
+Initiating SYN Stealth Scan at 14:51
+Scanning 10.10.162.54 [65535 ports]
+Discovered open port 22/tcp on 10.10.162.54
+Discovered open port 80/tcp on 10.10.162.54
+Increasing send delay for 10.10.162.54 from 0 to 5 due to 1312 out of 3279 dropped probes since last increase.
+Increasing send delay for 10.10.162.54 from 5 to 10 due to 11 out of 11 dropped probes since last increase.
+SYN Stealth Scan Timing: About 6.33% done; ETC: 14:59 (0:07:39 remaining)
+SYN Stealth Scan Timing: About 10.21% done; ETC: 15:01 (0:08:56 remaining)
+SYN Stealth Scan Timing: About 27.38% done; ETC: 15:03 (0:08:24 remaining)
+SYN Stealth Scan Timing: About 32.86% done; ETC: 15:03 (0:07:48 remaining)
+SYN Stealth Scan Timing: About 39.05% done; ETC: 15:03 (0:07:12 remaining)
+SYN Stealth Scan Timing: About 44.68% done; ETC: 15:03 (0:06:35 remaining)
+SYN Stealth Scan Timing: About 49.97% done; ETC: 15:03 (0:05:58 remaining)
+SYN Stealth Scan Timing: About 55.51% done; ETC: 15:03 (0:05:21 remaining)
+SYN Stealth Scan Timing: About 60.78% done; ETC: 15:03 (0:04:43 remaining)
+SYN Stealth Scan Timing: About 66.14% done; ETC: 15:03 (0:04:05 remaining)
+SYN Stealth Scan Timing: About 71.28% done; ETC: 15:03 (0:03:28 remaining)
+SYN Stealth Scan Timing: About 76.56% done; ETC: 15:03 (0:02:51 remaining)
+SYN Stealth Scan Timing: About 81.75% done; ETC: 15:03 (0:02:14 remaining)
+SYN Stealth Scan Timing: About 87.04% done; ETC: 15:03 (0:01:36 remaining)
+SYN Stealth Scan Timing: About 92.23% done; ETC: 15:04 (0:00:58 remaining)
+Completed SYN Stealth Scan at 15:04, 754.59s elapsed (65535 total ports)
+Initiating Service scan at 15:04
+Scanning 2 services on 10.10.162.54
+Completed Service scan at 15:04, 6.34s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 10.10.162.54
+Retrying OS detection (try #2) against 10.10.162.54
+Retrying OS detection (try #3) against 10.10.162.54
+Retrying OS detection (try #4) against 10.10.162.54
+Retrying OS detection (try #5) against 10.10.162.54
+Initiating Traceroute at 15:04
+Completed Traceroute at 15:04, 3.02s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 15:04
+Completed Parallel DNS resolution of 2 hosts. at 15:04, 0.00s elapsed
+NSE: Script scanning 10.10.162.54.
+Initiating NSE at 15:04
+Completed NSE at 15:04, 3.86s elapsed
+Initiating NSE at 15:04
+Completed NSE at 15:04, 0.48s elapsed
+Initiating NSE at 15:04
+Completed NSE at 15:04, 0.01s elapsed
+Nmap scan report for 10.10.162.54
+Host is up (0.11s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4b:0e:bf:14:fa:54:b3:5c:44:15:ed:b2:5d:a0:ac:8f (RSA)
+|   256 d0:3a:81:55:13:5e:87:0c:e8:52:1e:cf:44:e0:3a:54 (ECDSA)
+|_  256 da:ce:79:e0:45:eb:17:25:ef:62:ac:98:f0:cf:bb:04 (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET POST OPTIONS HEAD
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=8/6%OT=22%CT=1%CU=41485%PV=Y%DS=4%DC=T%G=Y%TM=62EEC956
+OS:%P=aarch64-unknown-linux-gnu)SEQ(SP=104%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=
+OS:A)OPS(O1=M506ST11NW6%O2=M506ST11NW6%O3=M506NNT11NW6%O4=M506ST11NW6%O5=M5
+OS:06ST11NW6%O6=M506ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B
+OS:3)ECN(R=Y%DF=Y%T=40%W=F507%O=M506NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S
+OS:+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=
+OS:)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%
+OS:A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%
+OS:DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=
+OS:40%CD=S)
 
-TRACEROUTE (using port 3389/tcp)
+Uptime guess: 30.050 days (since Thu Jul  7 13:52:49 2022)
+Network Distance: 4 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 5900/tcp)
 HOP RTT       ADDRESS
-1   49.64 ms  10.6.0.1
+1   46.95 ms  10.6.0.1
 2   ... 3
-4   149.74 ms 10.10.186.97
+4   115.89 ms 10.10.162.54
 
 NSE: Script Post-scanning.
-Initiating NSE at 14:08
-Completed NSE at 14:08, 0.00s elapsed
-Initiating NSE at 14:08
-Completed NSE at 14:08, 0.00s elapsed
-Initiating NSE at 14:08
-Completed NSE at 14:08, 0.00s elapsed
+Initiating NSE at 15:04
+Completed NSE at 15:04, 0.00s elapsed
+Initiating NSE at 15:04
+Completed NSE at 15:04, 0.00s elapsed
+Initiating NSE at 15:04
+Completed NSE at 15:04, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 365.08 seconds
-           Raw packets sent: 131352 (5.785MB) | Rcvd: 36451 (6.554MB)
+Nmap done: 1 IP address (1 host up) scanned in 781.43 seconds
+           Raw packets sent: 68385 (3.013MB) | Rcvd: 66934 (2.681MB)
 ```
            
 the Nmap scan reported that a web-site was avainble on port **80** and a RDP was availible on port **3389**           
