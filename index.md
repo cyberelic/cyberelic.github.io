@@ -7,7 +7,7 @@ this site focuses on my cyber security journey. its a place for me to write down
 
 This is a box labled "easy" from [tryhackme.com](https://www.tryhackme.com)
 
-The first thing i like to do with any new CTF is a Nmap scan.
+The first thing we do is a full Nmap scan
 
 ```
 $ sudo nmap -v -sS -A -T4 -p- 10.10.162.54
