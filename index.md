@@ -16,7 +16,6 @@ $ sudo nmap -v -sS -A -T4 -p- 10.10.162.54
 Which returned the following results:
 
 ```
-[sudo] password for cbr: 
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-06 14:51 CDT
 NSE: Loaded 155 scripts for scanning.
 NSE: Script Pre-scanning.
