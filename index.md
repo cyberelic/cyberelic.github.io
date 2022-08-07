@@ -3,7 +3,7 @@
 this site focuses on my cyber security journey. its a place for me to write down walkthroughs of the [CTF's](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) I complete.
 
 
-## Tryhackme - BruteIt
+### Tryhackme - BruteIt
 
 This is a box labled "easy" from [tryhackme.com/room/bruteit](https://www.tryhackme.com/room/bruteit)
 
