@@ -9,7 +9,7 @@ This is a box labled "easy" from [tryhackme.com/room/bruteit](https://www.tryhac
 
 ### Task 1
 
-how many ports are open?
+> how many ports are open?
 
 ```
 $ sudo nmap -v -sS -A -T4 -p- 10.10.162.54
@@ -126,9 +126,14 @@ Ports **22** and **80** are open
 Answer: 2
 
 
-What verson of SSH is running?
+> What verson of SSH is running?
 
 Answer: OpenSSH 7.6p1
+
+
+> What verson of Apache is running?
+
+Answer: 2.4.29
 
 
 ```
