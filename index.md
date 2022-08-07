@@ -123,21 +123,21 @@ Nmap done: 1 IP address (1 host up) scanned in 781.43 seconds
           
 Ports **22** and **80** are open
 
-Answer:  2
+Answer: **2**
 
 
 > What verson of SSH is running?
 
-Answer:  OpenSSH 7.6p1
+Answer: **OpenSSH 7.6p1**
 
 
 > What verson of Apache is running?
 
-Answer:  2.4.29
+Answer: **2.4.29**
 
 > What linux distrobution is running?
 
-Answer:  Ubuntu
+Answer: **Ubuntu**
 
 
 ```
@@ -178,4 +178,4 @@ by Ben "epi" Risher 🤓                 ver: 2.7.0
 
 > What is the hidden directory?
 
-Answer:  /admin
+Answer: **/admin**
