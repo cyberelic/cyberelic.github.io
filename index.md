@@ -119,8 +119,13 @@ Nmap done: 1 IP address (1 host up) scanned in 781.43 seconds
            Raw packets sent: 68385 (3.013MB) | Rcvd: 66934 (2.681MB)
 ```
            
-the Nmap scan reported that a web-site was avainble on port **80** and a RDP was availible on port **3389**           
-i then decided to run was a nikto scan on port **80**:
+Question 1 asked *How many ports are open?*
+
+Ports **22** and **80** are open
+
+Answer: 2
+
+
 
 which gave the following results:
 
