@@ -135,9 +135,47 @@ Answer: OpenSSH 7.6p1
 
 Answer: 2.4.29
 
+> What linux distrobution is running?
+
+Answer: Ubuntu
+
+
+```
+$ feroxbuster -u http://10.10.162.54 -w /usr/share/seclists/Discovery/Web-Content/big.txt -r
+
+ ___  ___  __   __     __      __         __   ___
+|__  |__  |__) |__) | /  `    /  \ \_/ | |  \ |__
+|    |___ |  \ |  \ | \__,    \__/ / \ | |__/ |___
+by Ben "epi" Risher 🤓                 ver: 2.7.0
+───────────────────────────┬──────────────────────
+ 🎯  Target Url            │ http://10.10.162.54
+ 🚀  Threads               │ 50
+ 📖  Wordlist              │ /usr/share/seclists/Discovery/Web-Content/big.txt
+ 👌  Status Codes          │ [200, 204, 301, 302, 307, 308, 401, 403, 405, 500]
+ 💥  Timeout (secs)        │ 7
+ 🦡  User-Agent            │ feroxbuster/2.7.0
+ 💉  Config File           │ /etc/feroxbuster/ferox-config.toml
+ 🏁  HTTP methods          │ [GET]
+ 📍  Follow Redirects      │ true
+ 🔃  Recursion Depth       │ 4
+ 🎉  New Version Available │ https://github.com/epi052/feroxbuster/releases/latest
+───────────────────────────┴──────────────────────
+ 🏁  Press [ENTER] to use the Scan Management Menu™
+──────────────────────────────────────────────────
+200      GET      375l      964w    10918c http://10.10.162.54/
+403      GET        9l       28w      277c http://10.10.162.54/.htaccess
+403      GET        9l       28w      277c http://10.10.162.54/.htpasswd
+200      GET       28l       52w      671c http://10.10.162.54/admin/
+403      GET        9l       28w      277c http://10.10.162.54/admin/.htpasswd
+403      GET        9l       28w      277c http://10.10.162.54/admin/.htaccess
+403      GET        9l       28w      277c http://10.10.162.54/server-status
+[####################] - 1m     61431/61431   0s      found:7       errors:5      
+[####################] - 59s    20477/20477   344/s   http://10.10.162.54 
+[####################] - 58s    20477/20477   347/s   http://10.10.162.54/ 
+[####################] - 54s    20477/20477   376/s   http://10.10.162.54/admin/ 
 
 ```
 
-```
+> What is the hidden directory?
 
-whats interesting here is the robots.txt that was found with intriguing entrys.
+Answer: /admin
