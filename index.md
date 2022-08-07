@@ -11,11 +11,7 @@ The first thing we do is a full Nmap scan
 
 ```
 $ sudo nmap -v -sS -A -T4 -p- 10.10.162.54
-```
 
-Which returned the following results:
-
-```
 Starting Nmap 7.92 ( https://nmap.org ) at 2022-08-06 14:51 CDT
 NSE: Loaded 155 scripts for scanning.
 NSE: Script Pre-scanning.
@@ -130,6 +126,7 @@ which gave the following results:
 
 ```
 $ nikto -h http://10.10.186.97 
+
 - Nikto v2.1.6
 ---------------------------------------------------------------------------
 + Target IP:          10.10.186.97
