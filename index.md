@@ -7,7 +7,9 @@ this site focuses on my cyber security journey. its a place for me to write down
 
 This is a box labled "easy" from [tryhackme.com/room/bruteit](https://www.tryhackme.com/room/bruteit)
 
-The first thing we do is a full Nmap scan
+### Task 1
+
+how many ports are open?
 
 ```
 $ sudo nmap -v -sS -A -T4 -p- 10.10.162.54
@@ -118,41 +120,19 @@ OS and Service detection performed. Please report any incorrect results at https
 Nmap done: 1 IP address (1 host up) scanned in 781.43 seconds
            Raw packets sent: 68385 (3.013MB) | Rcvd: 66934 (2.681MB)
 ```
-           
-Question 1 asked *How many ports are open?*
-
+          
 Ports **22** and **80** are open
 
 Answer: 2
 
 
+What verson of SSH is running?
 
-which gave the following results:
+Answer: OpenSSH 7.6p1
+
 
 ```
-$ nikto -h http://10.10.186.97 
 
-- Nikto v2.1.6
----------------------------------------------------------------------------
-+ Target IP:          10.10.186.97
-+ Target Hostname:    10.10.186.97
-+ Target Port:        80
-+ Start Time:         2022-07-11 13:40:50 (GMT-5)
----------------------------------------------------------------------------
-+ Server: No banner retrieved
-+ The anti-clickjacking X-Frame-Options header is not present.
-+ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
-+ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
-+ Server banner has changed from '' to 'Microsoft-IIS/10.0' which may suggest a WAF, load balancer or proxy is in place
-+ No CGI Directories found (use '-C all' to force check all possible dirs)
-+ Entry '/umbraco/' in robots.txt returned a non-forbidden or redirect HTTP code ()
-+ Entry '/umbraco_client/' in robots.txt returned a non-forbidden or redirect HTTP code ()
-+ "robots.txt" contains 4 entries which should be manually viewed.
-+ ERROR: Error limit (20) reached for host, giving up. Last error: error reading HTTP response
-+ Scan terminated:  20 error(s) and 6 item(s) reported on remote host
-+ End Time:           2022-07-11 13:51:23 (GMT-5) (633 seconds)
----------------------------------------------------------------------------
-+ 1 host(s) tested
 ```
 
 whats interesting here is the robots.txt that was found with intriguing entrys.
