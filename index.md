@@ -5,7 +5,7 @@ this site focuses on my cyber security journey. its a place for me to write down
 
 ## Tryhackme - BruteIt
 
-This is a box labled "easy" from [tryhackme.com](https://www.tryhackme.com)
+This is a box labled "easy" from [tryhackme.com/room/bruteit](https://www.tryhackme.com/room/bruteit)
 
 The first thing we do is a full Nmap scan
 
