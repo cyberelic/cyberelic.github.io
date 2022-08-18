@@ -4,7 +4,6 @@ this site focuses on my cyber security journey. its a place for me to write down
 
 <script src="https://tryhackme.com/badge/101635"></script>
 
-
 ### Tryhackme - BruteIt
 
 This is a box labled "easy" from [tryhackme.com/room/bruteit](https://www.tryhackme.com/room/bruteit)
