@@ -1,4 +1,4 @@
-##### Welcome to cyberelic
+#### Welcome to cyberelic
 
 This site focuses on my cyber security journey.
 
@@ -8,11 +8,11 @@ I am a dedicated cybersecurity enthusiast with a passion for safeguarding digita
 
 Here is a small list of the cheat sheets i have been consistantly referring back to:
 
-*[PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master)
+- [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master)
 
-*[Hacktricks](https://book.hacktricks.xyz/)
+- [Hacktricks](https://book.hacktricks.xyz/)
 
-*[WADcoms](https://wadcoms.github.io/)
+- [WADcoms](https://wadcoms.github.io/)
 
 #### Hackthebox Academy:
 
