@@ -12,7 +12,7 @@ Here is a small list of the cheat sheets i have been consistantly referring back
 
 [WADcoms](https://wadcoms.github.io/)
 
-## Hackthebox Academy:
+#### Hackthebox Academy:
 
 I've been progressing through the Pentester Path and im about %60 finished and its truly a good way to learn the neccessary tools and techniques.
 
