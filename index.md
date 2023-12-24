@@ -6,13 +6,19 @@ I am a dedicated cybersecurity enthusiast with a passion for safeguarding digita
 
 ---
 
-Here is a small list of the cheat sheets i have been consistantly referring back to:
+Here is a small list of the cheat sheets i've been consistantly referring back to:
 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master)
 
 - [Hacktricks](https://book.hacktricks.xyz/)
 
 - [WADcoms](https://wadcoms.github.io/)
+
+---
+
+`ffuf -u http://<target>:<ip> /w wordlist.txt`
+
+---
 
 #### Hackthebox Academy:
 
