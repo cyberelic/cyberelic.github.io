@@ -20,7 +20,7 @@ Here is a small list of the cheat sheets i've been consistantly referring back t
 
 ---
 
-here is a simple script that i used while trying to bypass and upload filter.
+here is a simple script that i used while trying to bypass an upload filter.
 
 
 ```bash
