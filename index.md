@@ -39,7 +39,7 @@ Use Burp and throw this into intruder to get a shell.
 ---
 #### Hackthebox Academy:
 
-I've been progressing through the Pentester Path and im about %60 finished and its truly a good way to learn the neccessary tools and techniques.
+I've been progressing through the Pentester Path and im about %60 finished and its truly a good way to learn the neccessary tools and techniques. below are some of the badges awarded from the HTB academy.
 
 [Arachnoid](https://academy.hackthebox.com/achievement/badge/2fd5f36b-9e12-11ee-bfb6-bea50ffe6cb4) - For completing the Web Attacks module
 
