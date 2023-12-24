@@ -41,6 +41,8 @@ Use Burp and throw this into intruder to get a shell.
 
 I've been progressing through the Pentester Path and im about %60 finished and its truly a good way to learn the neccessary tools and techniques.
 
+[Arachnoid](https://academy.hackthebox.com/achievement/badge/2fd5f36b-9e12-11ee-bfb6-bea50ffe6cb4) - For completing the Web Attacks module
+
 ---
 
 <script src="https://tryhackme.com/badge/101635"></script>
