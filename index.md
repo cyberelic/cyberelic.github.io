@@ -34,6 +34,8 @@ for char in '%20' '%0a' '%00' '%0d0a' '/' '.\\' '.' '…' ':'; do
 done
 ```
 
+Use Burp and throw this into intruder to get a shell.
+
 ---
 #### Hackthebox Academy:
 
