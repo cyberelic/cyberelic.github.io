@@ -16,7 +16,9 @@ Here is a small list of the cheat sheets i've been consistantly referring back t
 
 ---
 
-`ffuf /w wordlist.txt:FUZZ -u http://<target>:<port> -H 'Host: FUZZ.<targetip>.local`
+```bash
+ffuf /w wordlist.txt:FUZZ -u http://<target>:<port> -H 'Host: FUZZ.<targetip>.local
+```
 
 ---
 
